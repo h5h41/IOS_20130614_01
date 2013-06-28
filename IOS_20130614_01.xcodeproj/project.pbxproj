@@ -23,6 +23,8 @@
 		029E15E1176AA47400D2E36D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029E15BC176AA47300D2E36D /* Foundation.framework */; };
 		029E15E9176AA47400D2E36D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 029E15E7176AA47400D2E36D /* InfoPlist.strings */; };
 		029E15EC176AA47400D2E36D /* IOS_20130614_01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 029E15EB176AA47400D2E36D /* IOS_20130614_01Tests.m */; };
+		029E15F7176AA4C300D2E36D /* vcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029E15F6176AA4C300D2E36D /* vcViewController.m */; };
+		029E15FA176AA5CF00D2E36D /* PopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 029E15F9176AA5CF00D2E36D /* PopTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		029E15E8176AA47400D2E36D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		029E15EA176AA47400D2E36D /* IOS_20130614_01Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOS_20130614_01Tests.h; sourceTree = "<group>"; };
 		029E15EB176AA47400D2E36D /* IOS_20130614_01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS_20130614_01Tests.m; sourceTree = "<group>"; };
+		029E15F5176AA4C300D2E36D /* vcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vcViewController.h; path = ../vcViewController.h; sourceTree = "<group>"; };
+		029E15F6176AA4C300D2E36D /* vcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = vcViewController.m; path = ../vcViewController.m; sourceTree = "<group>"; };
+		029E15F8176AA5CF00D2E36D /* PopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopTableViewController.h; path = ../PopTableViewController.h; sourceTree = "<group>"; };
+		029E15F9176AA5CF00D2E36D /* PopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopTableViewController.m; path = ../PopTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 		029E15C0176AA47300D2E36D /* IOS_20130614_01 */ = {
 			isa = PBXGroup;
 			children = (
+				029E15F5176AA4C300D2E36D /* vcViewController.h */,
+				029E15F6176AA4C300D2E36D /* vcViewController.m */,
+				029E15F8176AA5CF00D2E36D /* PopTableViewController.h */,
+				029E15F9176AA5CF00D2E36D /* PopTableViewController.m */,
 				029E15C9176AA47300D2E36D /* AppDelegate.h */,
 				029E15CA176AA47400D2E36D /* AppDelegate.m */,
 				029E15D2176AA47400D2E36D /* ViewController.h */,
@@ -273,6 +283,8 @@
 				029E15C7176AA47300D2E36D /* main.m in Sources */,
 				029E15CB176AA47400D2E36D /* AppDelegate.m in Sources */,
 				029E15D4176AA47400D2E36D /* ViewController.m in Sources */,
+				029E15F7176AA4C300D2E36D /* vcViewController.m in Sources */,
+				029E15FA176AA5CF00D2E36D /* PopTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +387,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOS_20130614_01/IOS_20130614_01-Prefix.pch";
 				INFOPLIST_FILE = "IOS_20130614_01/IOS_20130614_01-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -386,7 +400,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IOS_20130614_01/IOS_20130614_01-Prefix.pch";
 				INFOPLIST_FILE = "IOS_20130614_01/IOS_20130614_01-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
